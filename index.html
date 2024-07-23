@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: "FigTree";
+        src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format("ttf"),
+          url("assets/fonts/static/Figtree-SemiBold.ttf") format("ttf"),
+          url("assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("ttf"),
+          url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+      }
+      :root {
+        --Yellow: hsl(47, 88%, 63%);
+        --Gray-500: hsl(0, 0%, 42%);
+        --Gray-950: hsl(0, 0%, 7%);
+      }
+      body {
+        background-color: var(--Yellow);
+        font-family: FigTree;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* Global styles */
+      body {
+        background-color: var(--Yellow);
+        font-family: FigTree;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Blog preview card */
+      main {
+        border: 1px solid var(--Gray-950);
+        border-radius: 20px;
+        background-color: white;
+        height: 472px;
+        width: 336px;
+        padding: 24px;
+        box-shadow: 8px 8px var(--Gray-950);
+      }
+
+      main h3 {
+        background-color: var(--Yellow);
+        width: fit-content;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      main img {
+        border-radius: 10px;
+      }
+
+      main h4 {
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      main h2 {
+        font-size: 24px;
+      }
+      main h2:hover {
+        color: var(--Yellow);
+        cursor: pointer;
+      }
+
+      main p {
+        color: var(--Gray-500);
+        font-size: 16px;
+      }
+
+      main footer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      main footer img {
+        width: 32px;
+        height: 32px;
+      }
+
+      main footer h4 {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="assets\images\illustration-article.svg" alt="" />
+
+      <h3>Learning</h3>
+      <h4>Published 21 Dec 2023</h4>
+      <h2>HTML & CSS foundations</h2>
+      <p>
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <footer>
+        <img src="assets\images\image-avatar.webp" alt="" />
+        <h4>Greg Hooper</h4>
+      </footer>
+    </main>
+  </body>
+</html>
